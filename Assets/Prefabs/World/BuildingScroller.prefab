@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8252768991824384852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8252768991824384853}
+  - component: {fileID: 8252768991824384855}
+  - component: {fileID: 5768342020763779905}
+  - component: {fileID: 8252768991824384854}
+  m_Layer: 0
+  m_Name: BuildingScroller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8252768991824384853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252768991824384852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8252768991824384855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252768991824384852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b60213c8f5e83d418f6b7f79d104ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSize: 10
+  maxSize: 100
+  componentPrefabs:
+  - {fileID: 8297128190191909247, guid: ddc4721cd2b0cee43aab0c530627695f, type: 3}
+  - {fileID: 8297128190191909247, guid: 37622000a99be1548a084daa0760d805, type: 3}
+  - {fileID: 8297128190191909247, guid: 1e244d9c7a9071447a29a4a7818e8aa2, type: 3}
+  activeComponents: []
+--- !u!114 &5768342020763779905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252768991824384852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b60213c8f5e83d418f6b7f79d104ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSize: 10
+  maxSize: 100
+  componentPrefabs:
+  - {fileID: 1882139149568351327, guid: b0a4bfaff54d6804e9ed093eb4a0c1ae, type: 3}
+  activeComponents: []
+--- !u!114 &8252768991824384854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252768991824384852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df75a56a57eb1824888dd68aaab3df24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingsPool: {fileID: 8252768991824384855}
+  obstaclesPool: {fileID: 5768342020763779905}
+  buildingScale: {x: 4, y: 4, z: 4}
+  buildingOffset: {x: 0, y: 0, z: 0}
+  despawnAfterRows: 2
+  numBuildingsPerRow: 15
+  buildingScrollSpeed: 40
+  spaceInBetweenBuildings: 6.5
+  buildingSeparationPercent: 120
+  obstacleMinScale: {x: 3, y: 3}
+  obstacleMaxScale: {x: 5, y: 5}
+  obstacleSpawnerTickSeconds: 3
+  obstacleSpawnChancePercent: 20
+  obstacleSpawnRangePercent: {x: 80, y: 100}
+  isSpawning: 1
+  isScrolling: 0
+  trailPosition: {x: 0, y: 0, z: 0}
