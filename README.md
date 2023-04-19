@@ -1,6 +1,3 @@
-# SpaceRun
-The scripts and assets for our Unity game, SpaceRun!
-
 # Space Run
 
 Space Run is a 2D platformer game built using Unity where the player controls a spaceship and must avoid crashing into buildings while flying through space.
